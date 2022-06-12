@@ -1,4 +1,7 @@
-import tweepy,json,requests,os
+import tweepy
+import json
+import requests
+import os
 
 twitter_API_key = "BRCp0BiQf4StVl3GJhA6tsjjs"
 twitter_API_key_secret = "5rnQptxaYqmrEQ8aIQeUeKVxxUvlqi4z4pn5IAbp3e4Z6A1GjG"
@@ -12,20 +15,32 @@ auth.set_access_token(twitter_access_token, twitter_access_token_secret)
 api = tweepy.API(auth)
 
 
-def create_url(post_id):
-    tweet_fields = "tweet.fields=created_at"
+def create_tweet_req_url(post_id):
+    tweet_fields = "tweet.fields=created_at,author_id,text,conversation_id"
     ids = "ids="+post_id
     url = "https://api.twitter.com/2/tweets?{}&{}".format(ids, tweet_fields)
     return url
 
 
-def bearer_oauth(r):
-    r.headers["Authorization"] = f"Bearer {twitter_bearer_token}"
-    r.headers["User-Agent"] = "v2TweetLookupPython"
-    return r
+def create_username_req_url(user_id):
+    tweet_fields = "tweet.fields=created_at,author_id,text"
+    ids = "ids="+user_id
+    url = "https://api.twitter.com/2/users?{}".format(ids)
+    return url
 
 
-def connect_to_endpoint(url):
+def create_conversation_req_url(converstion_id):
+    tweet_fields = "tweet.fields=created_at,author_id,text"
+    query = "query=conversation_id%3A"+converstion_id
+    url = "https://api.twitter.com/2/tweets/search/all?{}".format(query)
+    return url
+
+
+def connect_to_endpoint_bearer(url):
+    def bearer_oauth(r):
+        r.headers["Authorization"] = f"Bearer {twitter_bearer_token}"
+        r.headers["User-Agent"] = "v2TweetLookupPython"
+        return r
     response = requests.request("GET", url, auth=bearer_oauth)
     if response.status_code != 200:
         raise Exception(
@@ -37,13 +52,30 @@ def connect_to_endpoint(url):
 
 
 def get_tweet(post_id):
-    post = {}
-    url = create_url(post_id)
-    json_response = connect_to_endpoint(url)
-    post["tweet"] = json_response["data"][0]["text"]
-    post["date"] = json_response["data"][0]["created_at"]
-    return (json.dumps(post, indent=4, sort_keys=True))
+    url = create_tweet_req_url(post_id)
+    return connect_to_endpoint_bearer(url)["data"][0]
 
 
-if __name__ == "__main__":
-    print(get_tweet("1486641394735271939"))
+def get_username(user_id):
+    url = create_username_req_url(user_id)
+    return connect_to_endpoint_bearer(url)["data"][0]["name"]
+
+
+def get_conversation(converstion_id):
+    url = create_conversation_req_url(converstion_id)
+    return connect_to_endpoint_bearer(url)
+
+
+# print(get_tweet("1535970795448586242"))
+print(get_conversation("1535970795448586242"))
+
+{"client_id": "24555515",
+ "detail": "When authenticating requests to the Twitter API v2 endpoints,\
+  you must use keys and tokens from a Twitter developer App that is attached to a Project.\
+  You can create a project via the developer portal.",
+
+    "registration_url": "https://developer.twitter.com/en/docs/projects/overview",
+     "title": "Client Forbidden",
+     "required_enrollment": "Standard Basic",
+     "reason": "client-not-enrolled",
+     "type": "https://api.twitter.com/2/problems/client-forbidden"}
