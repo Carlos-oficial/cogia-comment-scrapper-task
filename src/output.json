@@ -1,527 +1,532 @@
-[
-  {
-    "main_comment": "What other skills do you think most programmer overlook when just starting out?",
-    "replies": [
-      "I\u2019ve been coding, starting what little I could at the age of 10 with the information and hardware I had available, 40 years ago.  I would have killed for something like Stack Overflow.  The information I had available until I was an adult was limited to what I could walk to get at the public library (school and local city library) and walking distance bookstores.  I had to learn a lot of stuff from what I had, and then translate/find parallels to what I had to work with in practice.  That\u2019s one skill that transfers incredibly well regardless of time/space/platform, and I\u2019d need to take a bit of time to count how many I\u2019ve worked with.\n\nHere is one that can help avoid needless time spent debugging later, that also is 100% transferrable: ensure all variables are explicitly initialized to a valid terminal state as early as possible.  What do I mean by that?\n1.  If it isn\u2019t otherwise changed to indicate that something was successful, it should be set to an error value.  This is what\u2019s returned by default.\n2.  If it isn\u2019t otherwise changed to indicate something failed (any operation succeeds unless that in particular fails) set it to a success value.  I prefer #1, less room to go wrong: use that FIRST because you can always go back later.  Just set it to a generic \u201cerror code not explicitly stated\u201d general error: you should never return a general error: what good is a general error?\n3.  Initialize any arrays or variables to a known-good safe state at the very beginning, so you have 100% repeatability every time you call that function.  This is even more important to remember when you work with non-deterministic systems, because all the determinism you can muster helps debugging be far more efficient.\n\nGetting into these habits will save you countless hours of debugging for what are often the dumbest of mistakes of execution or misunderstanding of the problem.  A 100% repeatable bug is the easiest bug to identify it is a bug, and  where it is at, and how to fix: accept no substitutes in your code by implementing this habit by default!  Code reviewers of any value will love you for it.  So will customers!  The most obnoxious software as a user is the software that you wonder if you will have it work correctly or at least the same way, given the same input, every time.",
-      "optimization;)",
-      "Files",
-      "I guess a good habit it HOW you actually learn.\n\nLearning *consistent,* every day (1-4 hours), WITH hands on (in the editor or on a website for practical coding), is most important for the very first months of a developers career.\n\nJust to build that foundation of basic knowledge, after which you may get more interesting tasks (and therefore more motivation).",
-      "Soft Skills, Cloud stuff, the Mathematics behind coding,etc.",
-      "@Lucas Premat \ud83d\udc4d",
-      "@Shis One example is Game Development.",
-      "@The Coding Mentor Absolutely. I feel like a blabbering wreck compared to our senior devs!!",
-      "Please elaborate on domain specific knowledge. Make video on it..",
-      "Communication Skills with other Programmers AND non programmers within the workplace"
-    ]
-  },
-  {
-    "main_comment": "This video is a paradox.",
-    "replies": []
-  },
-  {
-    "main_comment": "Great stuff and keep it up!",
-    "replies": []
-  },
-  {
-    "main_comment": "Make a video on programming habits.",
-    "replies": []
-  },
-  {
-    "main_comment": "Every time I feel demotivated \nI watch Tim's video to get motivated.",
-    "replies": []
-  },
-  {
-    "main_comment": "Need to gain your experience am a jnr full Stack web developer and don't feel even quite as ready",
-    "replies": []
-  },
-  {
-    "main_comment": "except you",
-    "replies": []
-  },
-  {
-    "main_comment": "Thanks.",
-    "replies": []
-  },
-  {
-    "main_comment": "\"Nobody Teach You\", Yeah You Just \"Teach Me And Others People\"",
-    "replies": []
-  },
-  {
-    "main_comment": "1. Focus on the problem primarily, technology and methodology secondarily\n\n2. You are coding for a user (human being) not for inanimate object\n\n3. You don't have god-like powers, you could be wrong so always test your code or your assumptions",
-    "replies": []
-  },
-  {
-    "main_comment": "Clicks thks video hoping you will teach me the skills no one is going to teach me: skill number 1 being: Not needing others to teach you. dang/;",
-    "replies": []
-  },
-  {
-    "main_comment": "Quickly debugging and problem solving is both the first and the last level.",
-    "replies": []
-  },
-  {
-    "main_comment": "Linode needs a permanent free tier, for all accounts. All others offer this. Google gives 300usd + a permanent free tier. Amazon gives 12 months free on some services and permanent free in others. Heroku gives a permanent free tier. Vercel gives a permanent free tier. Same goes for others not listed.\nBut linode has served me numerous ads instead of providing a generous free tier that would get me to try their service when I have the time and opportunity to do so, and with the pace that I feel comfortable with.\n\nAs it stands I'm not even going to make an account with them, cause idk if I will have the time or interest to check out their service in the next 2 months....",
-    "replies": []
-  },
-  {
-    "main_comment": "Make a video tutorial about Debugging & Obscure Problem Solving, please :)",
-    "replies": []
-  },
-  {
-    "main_comment": "You teach us",
-    "replies": []
-  },
-  {
-    "main_comment": "None is gonna teach \nTeaches",
-    "replies": []
-  },
-  {
-    "main_comment": "No one else*",
-    "replies": []
-  },
-  {
-    "main_comment": "\"nobody will teach you\"\n*proceeds to teach*",
-    "replies": []
-  },
-  {
-    "main_comment": "I am great at handling IEDs, but man, I just wanna work in IT.",
-    "replies": []
-  },
-  {
-    "main_comment": "\"Knowing when to ask for help on a forum\" (and when to keep scrounging for information on your own until your question turns into a different question) is huge. The first time I Actually reached the point where I thought \"I can't get any further on my own\" & had to sit there formulating a Post about it and got all the way through doing that without realizing there was something else I could look up or test that I hadn't noticed before was a weird milestone, but an important one, I think.",
-    "replies": []
-  },
-  {
-    "main_comment": "I have 10 years. Started coding with 7",
-    "replies": []
-  },
-  {
-    "main_comment": "Informative video. I do enjoy the fact that you get straight into your video without waffling, like many others.",
-    "replies": [
-      "I swear, I've seen your exact comment before in other videos :)"
-    ]
-  },
-  {
-    "main_comment": "I think your content is awesome and I am a beginning coder myself in Python and JavaScript. I just finished the Intro to Programming at Udacity but it gave me enough of a foundation to take things on my own from here. I will always watch your content and I would prefer to master a specific programming language but I\u2019m 40 already and have a long way to go so it\u2019s kinda late for me, but I\u2019m going to go all out as best as I can bc I love doing this more than my full time job. Thanks for your content and any tips would be greatly appreciated.",
-    "replies": [
-      "'kinda late'? no, it's never too late! learning is forever, whether you have 0 or 20 years of experience you will always keep seeing new stuff. hope your learning's going great !"
-    ]
-  },
-  {
-    "main_comment": "and you will,.. such a good boy",
-    "replies": []
-  },
-  {
-    "main_comment": "My tip : try to understand the principle not the technique and minimize the scope of techniques but use it efficiently.\n\nThe reason : Technique and technology will always evolve but principle is always the same.",
-    "replies": []
-  },
-  {
-    "main_comment": "The video should be blank as no one's supposed to teach these coding skills",
-    "replies": []
-  },
-  {
-    "main_comment": "Thank you so much",
-    "replies": []
-  },
-  {
-    "main_comment": "I think I am the worst when it comes to variable names or values...Believe me.",
-    "replies": [
-      "when i dont know what to call something i just do a random letter\nlike \"a\""
-    ]
-  },
-  {
-    "main_comment": "I find that lear learning to use your tools can be very difficult when your employer decides to change tools all the time. I was working at a place where we first used an IDE called endeavour, once I learned how to use that they switched to Visual Studio and I had to re-learn everything. Now the managers decided that eclipse is the way to go, and once again all keyboard shortcuts and all the menus were different. In the end I decided to not use any of the IDEs and just use a terminal, because I can't bother to re-learn everything once they decide to switch IDEs again.",
-    "replies": [
-      "I'm betting that place won't be around for long."
-    ]
-  },
-  {
-    "main_comment": "Nice to see you again Tim.\nI enjoy your videos for real.\n\ud83d\udc4d",
-    "replies": []
-  },
-  {
-    "main_comment": "Thank you for make subtitle \ud83d\udc4d",
-    "replies": []
-  },
-  {
-    "main_comment": "at 5:46 I feel like every beginner should learn that first, it really helps with understanding your current task and or your current project either for an job or just for fun.",
-    "replies": []
-  },
-  {
-    "main_comment": "Acts 20:21\nKing James Version\n21 Testifying both to the Jews, and also to the Greeks, repentance toward God, and faith toward our Lord Jesus Christ.\n\n*Did you know you\u2019re part of the ultimate statistics, 10 out of 10 people die. One day your heart will stop beating and you will be dead! The Bible says you\u2019ll then be judged by the holy and righteous God who created this universe.(Hebrew 9:27)You\u2019ll be judged for every word, thought, and action in your life.(Matthew 12:36-37) Will you be innocent or guilty?\n\n*Let\u2019s check the standard, the Ten Commandments. Have you ever lied (even a \u201cwhite\u201d lie)? (Revelation 21:8) Have you ever stolen anything (value is irrelevant and includes downloading or copying movies illegally)?  If you\u2019ve lusted, you\u2019ve committed adultery in your heart. (Matthew 5:27-30) (1 Corinthians 6:9-10)\n\nIf you\u2019ve hated someone, the Bible says you\u2019re a murderer(1 John 3:15). If you\u2019ve done any of these things, you will be guilty, and end up in Hell. God is perfect and He hates sin, but He sent His Son, Jesus Christ, to die on the Cross to take the punishment you deserve. Then He rose from the graves after three days  \u2013 defeating death. (Luke 24:46-48)\n\nRepent (turn from your sins) and trust in Jesus Christ our Lord and saviour  to receive forgiveness and everlasting life afterlife here on earth without pain, suffering and death anymore (revelation 21:4) God cannot Lie He is holy, Righteous and just cannot tolerate Sin(Hebrew 6:18) if you don\u2019t believe in God you are making God a liar. Think about it.\n\nDo you think God cannot preserve His words ? He created the heaven and the earth and the sea all living things here on earth including human.\n\n. Read the Bible to learn about God and how to live. (Acts 20:21) \n\n*Do God\u2019s will, plan and purpose in your life; these are above and beyond, immeasurable compare to your grandest dream.\n\n* We obey God\u2019s moral law the Ten Commandments because we love our Lord and saviour Jesus Christ, the Father and the Holy Ghost(John 14:15) (John 14:1-6) (John 14:16-26) (Mark 12:30-31)  with all our heart, soul, mind and all our strength, and we believe and have faith in Him; also we Fear Him with reverence with deep respect. \n\nJob 28:28\nKing James Version\n28 And unto man he said, Behold, the fear of the Lord, that is wisdom; and to depart from evil is understanding.\n\n1 Corinthians 6:9-10\nNew King James Version\n9 Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived. (A)Neither fornicators, nor idolaters, nor adulterers, nor [a]homosexuals, nor [b]sodomites, 10 nor thieves, nor covetous, nor drunkards, nor revilers, nor extortioners will inherit the kingdom of God.\n\nEcclesiastes 12:13-14\nNew King James Version\n13 Let us hear the conclusion of the whole matter:\n\n(A)Fear God and keep His commandments,\nFor this is man\u2019s all.\n14 For (B)God will bring every work into judgment,\nIncluding every secret thing,\nWhether good or evil.\n\n* Let\u2019s seek the Lord and His face also His strength, power, wisdom and discernment in our daily lives.\n\nWe need God\u2019s help to overcome Sin in our lives. And live a holy life in the eyes of the Living God. \n\nGod will help us if we seek Him diligently with all our heart, soul, mind and all our strength .\n\nPut on always the full armour of God (Ephesians 6:10-18)\n\nPhilippians 4:13\nNew King James Version\n13 I can do all things (A)through [a]Christ who strengthens me.\n\nPsalm 28:7\nNew King James Version\n7 The Lord is (A)my strength and my shield;\nMy heart (B)trusted in Him, and I am helped;\nTherefore my heart greatly rejoices,\nAnd with my song I will praise Him.\n\nGod bless.\n\n\nLiving water.",
-    "replies": []
-  },
-  {
-    "main_comment": "Great list. \n\nOne \u2018habit\u2019 I would suggest is to \u2018take an empirical view\u2019. Come up with theories. Do experiments. Disprove those theories. Basically, apply the scientific method. So much of programming is about discovery, not invention. Once you have discovered a way that works, a theory that seems correct, you can experiment to find out why, and iterate towards a way that works faster, less memory, less code etc. \n\nThat\u2019s why physicists make the best programmers \ud83d\ude09\n\nA second I would consider, somewhat related to the first, is \u2018knowing when to stop\u2019. One of my teachers said to me \u2018a program is never finished\u2019. You can always spend more time refactoring, tidying up, adding more tests, trying different libraries or versions of libraries, polishing the code; but in a production environment you have to know when to stop - perfection being the enemy of good enough. And not good enough being the enemy of acceptable. \n\nYou have to put a limit on your OCD. \n\nA final one for consideration; the right tool for the job. This could be considered under \u2018domain knowledge\u2019? Anyways, this was a favourite saying of another of my teachers. They pointed out that using the right tool can be 100 times faster (in dev time) than using the wrong one. Like if you have a hammer, every problem is treated like a nail. It\u2019s always worth hunting around to see if there already exists a tool for your problem.  Eg I once had 85 lines of code replaced by one line of (very cunning) sql. It\u2019s a trade off between time spent looking/asking vs time spent coding!\n\nI can\u2019t help but add a further one. Breadth and depth of knowledge. Spend some time getting to know the full stack. Read about, I don\u2019t know, Networks - how do they work? Databases - how do they actually work, web servers? What\u2019s really going on? If a bug leads you down a rabbit hole to some issue with eg DNS settings or port mappings - take a few extra minutes to find out more about them while you are there - rather than just the absolute minimum to fix what you need. You will be better prepared next time!",
-    "replies": []
-  },
-  {
-    "main_comment": "Reading Documentation, no one will teach you that and is really important",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff"
-    ]
-  },
-  {
-    "main_comment": "Thanks",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f"
-    ]
-  },
-  {
-    "main_comment": "Really amazing",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Ask for help is one important skill Programmers lack. Depending on stackoverflow, books and youtube vids are fine. After that ask your friends, colleagues and those around you too. TWT has been really inspiring, and info rich. Keep up the great work.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Good Moto: Go as far as you can see, and when you get there you can see farther...like driving in the fog.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "only do what you love in this life.....the stuff you talked about comes with that.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Hi Tim, can you do tutorials about GAN to generate images using AI? Thank you!",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "My programming habit is like yours",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Nice vid",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Here you are, teaching this and making your title a lie...",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Is it just me or tim's logo looks like firfox % microsoft edge",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Most annoying thing in my whole computer science is algo expert ad \ud83d\ude44",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Hi Tim or any other do you know an easy way to get an greencard?",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "I think, creating your own functions and creating your own module is also a good thing.. That way, when you find yourself using the same functions every time you work on something, it can be more efficient.",
-    "replies": [
-      "This is the standard bro",
-      "This is what the programming is. How come did it become an \u201calso a good thing\u201d which needs to be mentioned as a skill?"
-    ]
-  },
-  {
-    "main_comment": "Thank you Tim. Great video. Checkout The Pragmatic Programmer by David Thomas and Andrew Hunt will teach you a lot of good things like that and more.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "dont waste time my guys...\n\n\n\n\n2:11 \"Domain knowledge\": knowing about the real world in some area you're interested in; e.g. Microsoft's own products for people who work at MS; real estate if you're in real estate... In Tim's case, Python knowledge gathered while using it.\n4:53: Programming habits. \"subconscious\" skills. E.g. giving good names to variables. Having consistent style. Writing tests.\n7:25: Software tools and efficiency. Use of IDEs, libraries, version control, command line usage, knowledge of frameworks and modules. \n9:57: Debugging and obscure problem solving: Time believes there are a class of bugs connected with cross platform frameworks. The skill? Being aware that some bugs will not conform to usual paths, perhaps.\nCoda: Have faith: it's going to get better.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "i think after effects much better than premiere pro",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "ngl that segway to the sponsor was smooth. \ud83d\ude06\ud83e\udd1d",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "To be fair, you taught me these things :)",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "2:11 \"Domain knowledge\": knowing about the real world in some area you're interested in; e.g. Microsoft's own products for people who work at MS; real estate if you're in real estate... In Tim's case, Python knowledge gathered while using it.\n4:53: Programming habits. \"subconscious\" skills. E.g. giving good names to variables. Having consistent style. Writing tests.\n7:25: Software tools and efficiency. Use of IDEs, libraries, version control, command line usage, knowledge of frameworks and modules. \n9:57: Debugging and obscure problem solving: Time believes there are a class of bugs connected with cross platform frameworks. The skill? Being aware that some bugs will not conform to usual paths, perhaps.\nCoda: Have faith: it's going to get better.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "great",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "bro be turning into linus tech tips with that smooth sponsor transition",
-    "replies": []
-  },
-  {
-    "main_comment": "Hi Tim, great video. Is truth that you say. On the path of programming we will find ourselves in a constant growth of everything from the logic with which we program to the technologies we use. In a growth that in my humble opinion I feel that it does not end.  It is a great sensation to observe and compare the past to the present of today and to see the growths that one has had.",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "I know word 2007",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "I can't stress enough how important it is to create readable code. I've known extremely talented programmers who could write an entire service as a one-liner with all those nifty inline operators. When they moved on, and someone else took over their code, it was a disaster.",
-    "replies": [
-      "@Seeps Yeah.. it works better when you work on your own project!!!",
-      "@jamessullenriot can you explain that who need to wait.",
-      "@ys ts 10x faster usually means just sitting around waiting more",
-      "@Hanyang Lee deeply mentioned clear api documentation is far more important than wasting time on inner code comments\npoor api description but pretending to write tons of comments. oftenly\npeople dont know what theyre doing. putting time on \"reading\"..  understand others<reading<writing yours . they choose the most consuming one\nthe truth is. working slow as possible as the others act like. best for their job security. just opposite to what they decept themself\nwhy they appear in the company. obviously not a voluntary hobby.",
-      "hightly recommend \"Clean Code\" from Robert C. Martin.\nThat's a book which save many of my partner.",
-      "Usually code is more read than written. But this one line, is read more than understood.",
-      "You stated the reason why in the comment. Its so only you can read it and makes you harder to replace",
-      "@Seeps sure alls about money in a company. if employer didnt pay more, you dont need to work more. if you want to donate code for everyone go open source\nask your boss to choose from between normal and advance if you can provide him both options. yet total workload is coservated.",
-      "Hehe I assume its for their job security,  write code only you can read,,, rehire you if any changes needed...... ???? Profit",
-      "I know this very well, yeh agree Yossi. Shalom",
-      "As a project manager, I strongly discourage \"smart code\". If they are being smart, they get extra refactoring work to make it readable and understandable.",
-      "if he is 10x faster then it is not worth it to compensate his speed that due to readability.\nrather slow him down you better hire up to 9 people to rewrite the code with the same manhour cost if he is gone",
-      "This is a fine line to walk sometimes. Comments do wonders...",
-      "And remember readable code is testable code.."
-    ]
-  },
-  {
-    "main_comment": "Great video and info.. Thanks Tim",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "I am a game developer. Is that a domain?",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
-    ]
-  },
-  {
-    "main_comment": "Working with containers and github actions are important skills these days..",
-    "replies": []
-  },
-  {
-    "main_comment": "Nobody will teach you: Ok guess i won't watch this video then",
-    "replies": [
-      "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f"
-    ]
-  },
-  {
-    "main_comment": "5:50 competitive programmers :I",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Choosing great variable names isn't always easy but it is SO worth it. If done well, the code just comments itself.",
-    "replies": [
-      "Yes, but not just variables, goes for all names. Do it well and the code reads almost like natural language.",
-      "@Kitten Wizard cmon, Its just like that",
-      "@Kitten Wizard I must be a bad programmer \ud83d\ude14",
-      "@daneelfn wait you don't have variable names that are 12 lines?",
-      "@Vs Sm What are you talking about? How would changing a variable name to anything to the amount of code?",
-      "Or, you can add a line of comment and save a dozen lines of code."
-    ]
-  },
-  {
-    "main_comment": "Hey Tim, \nCustomtkinter is out for modern GUIs \nI want to ask if you can help converting it to exe file as it is different and difficult in custom tkinter from normal tkinter apps",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Love the video, great idea to become better programmer. My habit is giving 5 lines of space separating classes, statements, functions and adding a comment if needed it makes it easy for me to read and jump around",
-    "replies": [
-      "@BecoleX just fyi, you can get an autoformatter to do it for you. If you're python, pep8 is 2 blank lines before class.",
-      "@Vs Sm i don't know why but i get confused spacing it out looks good for me",
-      "What\u2019s wrong with one? You like scrolling so much? \ud83d\ude02"
-    ]
-  },
-  {
-    "main_comment": "Hey tim. What is your role in your job?",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Make a series on react native",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Love these hidden secrets type videos - thanks!",
-    "replies": []
-  },
-  {
-    "main_comment": "Coding and communication skills are so important, don't underestimate them guys. More and more value from this channel, there is no topic this guy hasn't covered. Thanks for the tips \u270c\ud83c\udffb",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d",
-      "@Dan Trebune Why would you need to do this?",
-      "Too true! One of the greatest skills a programmer can have is the ability break down and explain their code to a non-technical person!"
-    ]
-  },
-  {
-    "main_comment": "Probably Tim is the best Gen Z programmer on YouTube.",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "I am developer  since 20 years , I can say u are a special  .",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Also learning how to learn efficiently. It's something no one teaches you and you have to work on it and get good at it.",
-    "replies": [
-      "@Rub\u00e9n Guti\u00e9rrez Focusing on the most important things first. Mastering one language or i guess one more.",
-      "Any recommendations on that?"
-    ]
-  },
-  {
-    "main_comment": "In my view, \"domaing knowledge\" is to know about the market specifics of what you're working on. For example, I work in a Real Estate Fintech Startup, so the domain knowledge here is knowing about Real Estate market specifics. I actually think that, in some cases, it is better to have a Junior programmer with Domain Knowledge over a Senior programmer with no knowledge of the market the company is in",
-    "replies": [
-      "@vulpixelful Your comments are entirely off-topic. Your personal choice does not define the whole industry.",
-      "@Vs Sm Well that's how we work, and we're compensated well for that so that's all I can say \u270c\ud83c\udffe",
-      "@vulpixelful You are either an architect/dev or a domain specialist. You cannot be both, and there is no need for that even in a startup.",
-      "@Vs Sm Again, in small startups that's usually the senior devs bothering the Product Owner and architecting it themselves. In smaller orgs with less headcount, senior devs aren't just implementers, we also are the architects",
-      "@vulpixelful For a system design you need an architect, not a simple dev. In any case a domain specialist can be interviewed to get the specifics. You don't need to know everything, you need to learn how to ask right questions. This is what I do everyday as as dev, it's called translating business requirements to technical specifications.",
-      "Yes, I'm in a fintech startup too and this is true. In a bigger company, that may be \"someone else's job\" but not in a startup lol. The domain drives the system design.",
-      "That is indeed what is called domain knowledge. I work in educational software, and my coworkers with a background in education are the ones with domain knowledge, even though I have far more expertise in software.",
-      "@John Bennett Sorry, you are too wordy. Word diarrhea is not the best way of communication.",
-      "@Vs Sm apparently my message was not clear because you absolutely and totally misunderstand it. Lack of education? I graduated from CALTECH, one of the hardest colleges in the world. My job was hard because I chose one that is inherently hard. I did it because I enjoy the challenge. I got the job and\nwas given such limited direction because my boss trusted my knowledge and skill.\nI guess you have been lucky and worked for a company with a real marketing department. Most companies so called market department is just a glorified sales team. They give limited and unreasonable \"designs\". The programmers have to sort it out and come up with the real design. Unfortunately too many programmers just do the minimum to get the code to work. In the end customers are frequently left with the choice between bad and horrible.",
-      "@John Bennett Exactly. When you don't bother getting a proper education, your life in programming is very hard like yours. When you have one, it's just yet another task you've been solving for years. My attitude is education. education and education. Your attitude is neither education, nor experience, otherwise you would know that any interface is paid for by a Marketing Department and not by talented UX/UI designers.",
-      "@Vs Sm if you are a coder, then fine. If you are what I would call a programmer, you need a lot more. At my last job, my assignment was \"improve the accuracy of the handwriting recognizer\". It was my job to figure out how to do this. It involved a combination of my knowledge, asking my colleagues, research and a whole lot of experimentation. Most programmers get more direction than this, but a lot of important details are left up to them. Your attitude is why every retail interface I have ever seen was somewhere between bad and truly horrible.",
-      "@JulianoGheller Before you get a specific role you have to get a proper education which let you get specialized in any field you want. The problem is that you don't have one and that's why cannot see a bigger picture.",
-      "@Vs Sm I see it in another way. If your mindset is that you should only learn and execute things in your specific role, thats right (you can even call yourself a \"Specialist\"), but anyone who is curious enough to exceed your pre-determined attributions to contribute in as many ways possible (called a \"Generalist\"), is, in my opinion, way more valuable. Be whatever you want, but, notoriously, these individuals have a way higher chance to succeed just because they have a bigger range of skills",
-      "@Devashish Mishra Proper education, then domain is a context only.",
-      "@JulianoGheller For priorities there are  PM and BA regardless of your position. You are just doing someone's else job you are not paid for.",
-      "What's the best way of gaining domain knowledge?",
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d",
-      "@Vs Sm exactly, it's not the technical things that differ, but the understanding of the priorities and the things that really would improve the product as a whole, that's why I used the \"Junior with this knowledge > Senior without (for some cases) eu\" argument. My point is that this Junior would have way more autonomy and direction of what needs to be done than the Senior, that would know HOW, but not what.",
-      "This is just a silly bias. How an input field or SQL query differ in real estate? I\u2019ve been working in finance area for years and still have no idea what they talk about. For all your questions there is always a BA or someone from the business side.",
-      "I agree. It might be just a fintech thing. The knowledge of how the finance part works is a really important part in being able to even know where to start. It does cut both ways though into things like specific routines that do finance calculations, or audit reporting. I know in my company there's people who've done these for years and just know the entire range of possibilities in those specific areas",
-      "@JulianoGheller ok.",
-      "@Lucas Premat it could be, depends on the way uou see it, doesnt really matter",
-      "No isn't it different areas in Programming? like game development for example?"
-    ]
-  },
-  {
-    "main_comment": "I use Vim",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d",
-      "I use vim in vs code. Still getting used to it \ud83d\ude05",
-      "you dropped this king \ud83d\udc51"
-    ]
-  },
-  {
-    "main_comment": "Love the fact that you edit your own videos, that's actually amazing. And you're right, as a beginner, running into errors is actually very depressing lol",
-    "replies": [
-      "@daneelfn probably a bit narcissistic. It\u2019s best to ignore such  people as if they were empty space",
-      "@daneelfn Oh, boy \ud83d\ude02",
-      "@Vs Sm bro how negative are you, i've seen u comment like 5 different things just being annoying. Like are you ok?",
-      "@mccowan zhang An only relevant one. \ud83d\ude02",
-      "An error is a chance to learn something! \ud83d\ude01",
-      "@Vs Sm Terrible response.",
-      "Then you need to look for a simpler career."
-    ]
-  },
-  {
-    "main_comment": "Teacher Tim \ud83d\ude48",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Looking forward to more rust! \ud83d\ude01",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Title: *Coding tips no one will teach you*\nTim: *Teaches us those coding tips*\nThanks, great video",
-    "replies": [
-      "Hahah, I told you about them, not taught you them ;)"
-    ]
-  },
-  {
-    "main_comment": "You could teach us Tim \ud83e\udd7a",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Fascinating",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Thanks man!",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "First comment \ud83e\udd73\ud83e\udd73\ud83e\udd73\ud83e\udd73\ud83e\udd73\ud83e\udd73",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Thank you for the video , Tim.",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "Pog",
-    "replies": []
-  },
-  {
-    "main_comment": "Second \ud83e\udd48",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  },
-  {
-    "main_comment": "First \ud83e\udd47",
-    "replies": [
-      "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
-    ]
-  }
-]
+{
+  "comments": [
+    {
+      "main_comment": "What other skills do you think most programmer overlook when just starting out?",
+      "replies": [
+        "I\u2019ve been coding, starting what little I could at the age of 10 with the information and hardware I had available, 40 years ago.  I would have killed for something like Stack Overflow.  The information I had available until I was an adult was limited to what I could walk to get at the public library (school and local city library) and walking distance bookstores.  I had to learn a lot of stuff from what I had, and then translate/find parallels to what I had to work with in practice.  That\u2019s one skill that transfers incredibly well regardless of time/space/platform, and I\u2019d need to take a bit of time to count how many I\u2019ve worked with.\n\nHere is one that can help avoid needless time spent debugging later, that also is 100% transferrable: ensure all variables are explicitly initialized to a valid terminal state as early as possible.  What do I mean by that?\n1.  If it isn\u2019t otherwise changed to indicate that something was successful, it should be set to an error value.  This is what\u2019s returned by default.\n2.  If it isn\u2019t otherwise changed to indicate something failed (any operation succeeds unless that in particular fails) set it to a success value.  I prefer #1, less room to go wrong: use that FIRST because you can always go back later.  Just set it to a generic \u201cerror code not explicitly stated\u201d general error: you should never return a general error: what good is a general error?\n3.  Initialize any arrays or variables to a known-good safe state at the very beginning, so you have 100% repeatability every time you call that function.  This is even more important to remember when you work with non-deterministic systems, because all the determinism you can muster helps debugging be far more efficient.\n\nGetting into these habits will save you countless hours of debugging for what are often the dumbest of mistakes of execution or misunderstanding of the problem.  A 100% repeatable bug is the easiest bug to identify it is a bug, and  where it is at, and how to fix: accept no substitutes in your code by implementing this habit by default!  Code reviewers of any value will love you for it.  So will customers!  The most obnoxious software as a user is the software that you wonder if you will have it work correctly or at least the same way, given the same input, every time.",
+        "optimization;)",
+        "Files",
+        "I guess a good habit it HOW you actually learn.\n\nLearning *consistent,* every day (1-4 hours), WITH hands on (in the editor or on a website for practical coding), is most important for the very first months of a developers career.\n\nJust to build that foundation of basic knowledge, after which you may get more interesting tasks (and therefore more motivation).",
+        "Soft Skills, Cloud stuff, the Mathematics behind coding,etc.",
+        "@Lucas Premat \ud83d\udc4d",
+        "@Shis One example is Game Development.",
+        "@The Coding Mentor Absolutely. I feel like a blabbering wreck compared to our senior devs!!",
+        "Please elaborate on domain specific knowledge. Make video on it..",
+        "Communication Skills with other Programmers AND non programmers within the workplace"
+      ]
+    },
+    {
+      "main_comment": "This video is a paradox.",
+      "replies": []
+    },
+    {
+      "main_comment": "Great stuff and keep it up!",
+      "replies": []
+    },
+    {
+      "main_comment": "Make a video on programming habits.",
+      "replies": []
+    },
+    {
+      "main_comment": "Every time I feel demotivated \nI watch Tim's video to get motivated.",
+      "replies": []
+    },
+    {
+      "main_comment": "Need to gain your experience am a jnr full Stack web developer and don't feel even quite as ready",
+      "replies": []
+    },
+    {
+      "main_comment": "except you",
+      "replies": []
+    },
+    {
+      "main_comment": "Thanks.",
+      "replies": []
+    },
+    {
+      "main_comment": "\"Nobody Teach You\", Yeah You Just \"Teach Me And Others People\"",
+      "replies": []
+    },
+    {
+      "main_comment": "1. Focus on the problem primarily, technology and methodology secondarily\n\n2. You are coding for a user (human being) not for inanimate object\n\n3. You don't have god-like powers, you could be wrong so always test your code or your assumptions",
+      "replies": []
+    },
+    {
+      "main_comment": "Clicks thks video hoping you will teach me the skills no one is going to teach me: skill number 1 being: Not needing others to teach you. dang/;",
+      "replies": []
+    },
+    {
+      "main_comment": "Quickly debugging and problem solving is both the first and the last level.",
+      "replies": []
+    },
+    {
+      "main_comment": "Linode needs a permanent free tier, for all accounts. All others offer this. Google gives 300usd + a permanent free tier. Amazon gives 12 months free on some services and permanent free in others. Heroku gives a permanent free tier. Vercel gives a permanent free tier. Same goes for others not listed.\nBut linode has served me numerous ads instead of providing a generous free tier that would get me to try their service when I have the time and opportunity to do so, and with the pace that I feel comfortable with.\n\nAs it stands I'm not even going to make an account with them, cause idk if I will have the time or interest to check out their service in the next 2 months....",
+      "replies": []
+    },
+    {
+      "main_comment": "Make a video tutorial about Debugging & Obscure Problem Solving, please :)",
+      "replies": []
+    },
+    {
+      "main_comment": "You teach us",
+      "replies": []
+    },
+    {
+      "main_comment": "None is gonna teach \nTeaches",
+      "replies": []
+    },
+    {
+      "main_comment": "No one else*",
+      "replies": []
+    },
+    {
+      "main_comment": "\"nobody will teach you\"\n*proceeds to teach*",
+      "replies": []
+    },
+    {
+      "main_comment": "I am great at handling IEDs, but man, I just wanna work in IT.",
+      "replies": []
+    },
+    {
+      "main_comment": "\"Knowing when to ask for help on a forum\" (and when to keep scrounging for information on your own until your question turns into a different question) is huge. The first time I Actually reached the point where I thought \"I can't get any further on my own\" & had to sit there formulating a Post about it and got all the way through doing that without realizing there was something else I could look up or test that I hadn't noticed before was a weird milestone, but an important one, I think.",
+      "replies": []
+    },
+    {
+      "main_comment": "I have 10 years. Started coding with 7",
+      "replies": []
+    },
+    {
+      "main_comment": "Informative video. I do enjoy the fact that you get straight into your video without waffling, like many others.",
+      "replies": [
+        "I swear, I've seen your exact comment before in other videos :)"
+      ]
+    },
+    {
+      "main_comment": "I think your content is awesome and I am a beginning coder myself in Python and JavaScript. I just finished the Intro to Programming at Udacity but it gave me enough of a foundation to take things on my own from here. I will always watch your content and I would prefer to master a specific programming language but I\u2019m 40 already and have a long way to go so it\u2019s kinda late for me, but I\u2019m going to go all out as best as I can bc I love doing this more than my full time job. Thanks for your content and any tips would be greatly appreciated.",
+      "replies": [
+        "'kinda late'? no, it's never too late! learning is forever, whether you have 0 or 20 years of experience you will always keep seeing new stuff. hope your learning's going great !"
+      ]
+    },
+    {
+      "main_comment": "and you will,.. such a good boy",
+      "replies": []
+    },
+    {
+      "main_comment": "My tip : try to understand the principle not the technique and minimize the scope of techniques but use it efficiently.\n\nThe reason : Technique and technology will always evolve but principle is always the same.",
+      "replies": []
+    },
+    {
+      "main_comment": "The video should be blank as no one's supposed to teach these coding skills",
+      "replies": []
+    },
+    {
+      "main_comment": "Thank you so much",
+      "replies": []
+    },
+    {
+      "main_comment": "I think I am the worst when it comes to variable names or values...Believe me.",
+      "replies": [
+        "when i dont know what to call something i just do a random letter\nlike \"a\""
+      ]
+    },
+    {
+      "main_comment": "I find that lear learning to use your tools can be very difficult when your employer decides to change tools all the time. I was working at a place where we first used an IDE called endeavour, once I learned how to use that they switched to Visual Studio and I had to re-learn everything. Now the managers decided that eclipse is the way to go, and once again all keyboard shortcuts and all the menus were different. In the end I decided to not use any of the IDEs and just use a terminal, because I can't bother to re-learn everything once they decide to switch IDEs again.",
+      "replies": [
+        "I'm betting that place won't be around for long."
+      ]
+    },
+    {
+      "main_comment": "Nice to see you again Tim.\nI enjoy your videos for real.\n\ud83d\udc4d",
+      "replies": []
+    },
+    {
+      "main_comment": "Thank you for make subtitle \ud83d\udc4d",
+      "replies": []
+    },
+    {
+      "main_comment": "at 5:46 I feel like every beginner should learn that first, it really helps with understanding your current task and or your current project either for an job or just for fun.",
+      "replies": []
+    },
+    {
+      "main_comment": "Acts 20:21\nKing James Version\n21 Testifying both to the Jews, and also to the Greeks, repentance toward God, and faith toward our Lord Jesus Christ.\n\n*Did you know you\u2019re part of the ultimate statistics, 10 out of 10 people die. One day your heart will stop beating and you will be dead! The Bible says you\u2019ll then be judged by the holy and righteous God who created this universe.(Hebrew 9:27)You\u2019ll be judged for every word, thought, and action in your life.(Matthew 12:36-37) Will you be innocent or guilty?\n\n*Let\u2019s check the standard, the Ten Commandments. Have you ever lied (even a \u201cwhite\u201d lie)? (Revelation 21:8) Have you ever stolen anything (value is irrelevant and includes downloading or copying movies illegally)?  If you\u2019ve lusted, you\u2019ve committed adultery in your heart. (Matthew 5:27-30) (1 Corinthians 6:9-10)\n\nIf you\u2019ve hated someone, the Bible says you\u2019re a murderer(1 John 3:15). If you\u2019ve done any of these things, you will be guilty, and end up in Hell. God is perfect and He hates sin, but He sent His Son, Jesus Christ, to die on the Cross to take the punishment you deserve. Then He rose from the graves after three days  \u2013 defeating death. (Luke 24:46-48)\n\nRepent (turn from your sins) and trust in Jesus Christ our Lord and saviour  to receive forgiveness and everlasting life afterlife here on earth without pain, suffering and death anymore (revelation 21:4) God cannot Lie He is holy, Righteous and just cannot tolerate Sin(Hebrew 6:18) if you don\u2019t believe in God you are making God a liar. Think about it.\n\nDo you think God cannot preserve His words ? He created the heaven and the earth and the sea all living things here on earth including human.\n\n. Read the Bible to learn about God and how to live. (Acts 20:21) \n\n*Do God\u2019s will, plan and purpose in your life; these are above and beyond, immeasurable compare to your grandest dream.\n\n* We obey God\u2019s moral law the Ten Commandments because we love our Lord and saviour Jesus Christ, the Father and the Holy Ghost(John 14:15) (John 14:1-6) (John 14:16-26) (Mark 12:30-31)  with all our heart, soul, mind and all our strength, and we believe and have faith in Him; also we Fear Him with reverence with deep respect. \n\nJob 28:28\nKing James Version\n28 And unto man he said, Behold, the fear of the Lord, that is wisdom; and to depart from evil is understanding.\n\n1 Corinthians 6:9-10\nNew King James Version\n9 Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived. (A)Neither fornicators, nor idolaters, nor adulterers, nor [a]homosexuals, nor [b]sodomites, 10 nor thieves, nor covetous, nor drunkards, nor revilers, nor extortioners will inherit the kingdom of God.\n\nEcclesiastes 12:13-14\nNew King James Version\n13 Let us hear the conclusion of the whole matter:\n\n(A)Fear God and keep His commandments,\nFor this is man\u2019s all.\n14 For (B)God will bring every work into judgment,\nIncluding every secret thing,\nWhether good or evil.\n\n* Let\u2019s seek the Lord and His face also His strength, power, wisdom and discernment in our daily lives.\n\nWe need God\u2019s help to overcome Sin in our lives. And live a holy life in the eyes of the Living God. \n\nGod will help us if we seek Him diligently with all our heart, soul, mind and all our strength .\n\nPut on always the full armour of God (Ephesians 6:10-18)\n\nPhilippians 4:13\nNew King James Version\n13 I can do all things (A)through [a]Christ who strengthens me.\n\nPsalm 28:7\nNew King James Version\n7 The Lord is (A)my strength and my shield;\nMy heart (B)trusted in Him, and I am helped;\nTherefore my heart greatly rejoices,\nAnd with my song I will praise Him.\n\nGod bless.\n\n\nLiving water.",
+      "replies": []
+    },
+    {
+      "main_comment": "Great list. \n\nOne \u2018habit\u2019 I would suggest is to \u2018take an empirical view\u2019. Come up with theories. Do experiments. Disprove those theories. Basically, apply the scientific method. So much of programming is about discovery, not invention. Once you have discovered a way that works, a theory that seems correct, you can experiment to find out why, and iterate towards a way that works faster, less memory, less code etc. \n\nThat\u2019s why physicists make the best programmers \ud83d\ude09\n\nA second I would consider, somewhat related to the first, is \u2018knowing when to stop\u2019. One of my teachers said to me \u2018a program is never finished\u2019. You can always spend more time refactoring, tidying up, adding more tests, trying different libraries or versions of libraries, polishing the code; but in a production environment you have to know when to stop - perfection being the enemy of good enough. And not good enough being the enemy of acceptable. \n\nYou have to put a limit on your OCD. \n\nA final one for consideration; the right tool for the job. This could be considered under \u2018domain knowledge\u2019? Anyways, this was a favourite saying of another of my teachers. They pointed out that using the right tool can be 100 times faster (in dev time) than using the wrong one. Like if you have a hammer, every problem is treated like a nail. It\u2019s always worth hunting around to see if there already exists a tool for your problem.  Eg I once had 85 lines of code replaced by one line of (very cunning) sql. It\u2019s a trade off between time spent looking/asking vs time spent coding!\n\nI can\u2019t help but add a further one. Breadth and depth of knowledge. Spend some time getting to know the full stack. Read about, I don\u2019t know, Networks - how do they work? Databases - how do they actually work, web servers? What\u2019s really going on? If a bug leads you down a rabbit hole to some issue with eg DNS settings or port mappings - take a few extra minutes to find out more about them while you are there - rather than just the absolute minimum to fix what you need. You will be better prepared next time!",
+      "replies": []
+    },
+    {
+      "main_comment": "Reading Documentation, no one will teach you that and is really important",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff"
+      ]
+    },
+    {
+      "main_comment": "Thanks",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f"
+      ]
+    },
+    {
+      "main_comment": "Really amazing",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Ask for help is one important skill Programmers lack. Depending on stackoverflow, books and youtube vids are fine. After that ask your friends, colleagues and those around you too. TWT has been really inspiring, and info rich. Keep up the great work.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Good Moto: Go as far as you can see, and when you get there you can see farther...like driving in the fog.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "only do what you love in this life.....the stuff you talked about comes with that.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Hi Tim, can you do tutorials about GAN to generate images using AI? Thank you!",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "My programming habit is like yours",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Nice vid",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Here you are, teaching this and making your title a lie...",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Is it just me or tim's logo looks like firfox % microsoft edge",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Most annoying thing in my whole computer science is algo expert ad \ud83d\ude44",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Hi Tim or any other do you know an easy way to get an greencard?",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "I think, creating your own functions and creating your own module is also a good thing.. That way, when you find yourself using the same functions every time you work on something, it can be more efficient.",
+      "replies": [
+        "This is the standard bro",
+        "This is what the programming is. How come did it become an \u201calso a good thing\u201d which needs to be mentioned as a skill?"
+      ]
+    },
+    {
+      "main_comment": "Thank you Tim. Great video. Checkout The Pragmatic Programmer by David Thomas and Andrew Hunt will teach you a lot of good things like that and more.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "dont waste time my guys...\n\n\n\n\n2:11 \"Domain knowledge\": knowing about the real world in some area you're interested in; e.g. Microsoft's own products for people who work at MS; real estate if you're in real estate... In Tim's case, Python knowledge gathered while using it.\n4:53: Programming habits. \"subconscious\" skills. E.g. giving good names to variables. Having consistent style. Writing tests.\n7:25: Software tools and efficiency. Use of IDEs, libraries, version control, command line usage, knowledge of frameworks and modules. \n9:57: Debugging and obscure problem solving: Time believes there are a class of bugs connected with cross platform frameworks. The skill? Being aware that some bugs will not conform to usual paths, perhaps.\nCoda: Have faith: it's going to get better.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "i think after effects much better than premiere pro",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "ngl that segway to the sponsor was smooth. \ud83d\ude06\ud83e\udd1d",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "To be fair, you taught me these things :)",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "2:11 \"Domain knowledge\": knowing about the real world in some area you're interested in; e.g. Microsoft's own products for people who work at MS; real estate if you're in real estate... In Tim's case, Python knowledge gathered while using it.\n4:53: Programming habits. \"subconscious\" skills. E.g. giving good names to variables. Having consistent style. Writing tests.\n7:25: Software tools and efficiency. Use of IDEs, libraries, version control, command line usage, knowledge of frameworks and modules. \n9:57: Debugging and obscure problem solving: Time believes there are a class of bugs connected with cross platform frameworks. The skill? Being aware that some bugs will not conform to usual paths, perhaps.\nCoda: Have faith: it's going to get better.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "great",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "bro be turning into linus tech tips with that smooth sponsor transition",
+      "replies": []
+    },
+    {
+      "main_comment": "Hi Tim, great video. Is truth that you say. On the path of programming we will find ourselves in a constant growth of everything from the logic with which we program to the technologies we use. In a growth that in my humble opinion I feel that it does not end.  It is a great sensation to observe and compare the past to the present of today and to see the growths that one has had.",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "I know word 2007",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "I can't stress enough how important it is to create readable code. I've known extremely talented programmers who could write an entire service as a one-liner with all those nifty inline operators. When they moved on, and someone else took over their code, it was a disaster.",
+      "replies": [
+        "@Seeps Yeah.. it works better when you work on your own project!!!",
+        "@jamessullenriot can you explain that who need to wait.",
+        "@ys ts 10x faster usually means just sitting around waiting more",
+        "@Hanyang Lee deeply mentioned clear api documentation is far more important than wasting time on inner code comments\npoor api description but pretending to write tons of comments. oftenly\npeople dont know what theyre doing. putting time on \"reading\"..  understand others<reading<writing yours . they choose the most consuming one\nthe truth is. working slow as possible as the others act like. best for their job security. just opposite to what they decept themself\nwhy they appear in the company. obviously not a voluntary hobby.",
+        "hightly recommend \"Clean Code\" from Robert C. Martin.\nThat's a book which save many of my partner.",
+        "Usually code is more read than written. But this one line, is read more than understood.",
+        "You stated the reason why in the comment. Its so only you can read it and makes you harder to replace",
+        "@Seeps sure alls about money in a company. if employer didnt pay more, you dont need to work more. if you want to donate code for everyone go open source\nask your boss to choose from between normal and advance if you can provide him both options. yet total workload is coservated.",
+        "Hehe I assume its for their job security,  write code only you can read,,, rehire you if any changes needed...... ???? Profit",
+        "I know this very well, yeh agree Yossi. Shalom",
+        "As a project manager, I strongly discourage \"smart code\". If they are being smart, they get extra refactoring work to make it readable and understandable.",
+        "if he is 10x faster then it is not worth it to compensate his speed that due to readability.\nrather slow him down you better hire up to 9 people to rewrite the code with the same manhour cost if he is gone",
+        "This is a fine line to walk sometimes. Comments do wonders...",
+        "And remember readable code is testable code.."
+      ]
+    },
+    {
+      "main_comment": "Great video and info.. Thanks Tim",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "I am a game developer. Is that a domain?",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f\ud83d\udce9"
+      ]
+    },
+    {
+      "main_comment": "Working with containers and github actions are important skills these days..",
+      "replies": []
+    },
+    {
+      "main_comment": "Nobody will teach you: Ok guess i won't watch this video then",
+      "replies": [
+        "\ud83c\udd77\ud83c\udd74\ud83c\udd7b\ud83c\udd7f \ud83c\udd7b\ud83c\udd78\ud83c\udd7d\ud83c\udd74\u261d\u261d\u270d\ufe0f\u270d\ufe0f"
+      ]
+    },
+    {
+      "main_comment": "5:50 competitive programmers :I",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Choosing great variable names isn't always easy but it is SO worth it. If done well, the code just comments itself.",
+      "replies": [
+        "Yes, but not just variables, goes for all names. Do it well and the code reads almost like natural language.",
+        "@Kitten Wizard cmon, Its just like that",
+        "@Kitten Wizard I must be a bad programmer \ud83d\ude14",
+        "@daneelfn wait you don't have variable names that are 12 lines?",
+        "@Vs Sm What are you talking about? How would changing a variable name to anything to the amount of code?",
+        "Or, you can add a line of comment and save a dozen lines of code."
+      ]
+    },
+    {
+      "main_comment": "Hey Tim, \nCustomtkinter is out for modern GUIs \nI want to ask if you can help converting it to exe file as it is different and difficult in custom tkinter from normal tkinter apps",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Love the video, great idea to become better programmer. My habit is giving 5 lines of space separating classes, statements, functions and adding a comment if needed it makes it easy for me to read and jump around",
+      "replies": [
+        "@BecoleX just fyi, you can get an autoformatter to do it for you. If you're python, pep8 is 2 blank lines before class.",
+        "@Vs Sm i don't know why but i get confused spacing it out looks good for me",
+        "What\u2019s wrong with one? You like scrolling so much? \ud83d\ude02"
+      ]
+    },
+    {
+      "main_comment": "Hey tim. What is your role in your job?",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Make a series on react native",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Love these hidden secrets type videos - thanks!",
+      "replies": []
+    },
+    {
+      "main_comment": "Coding and communication skills are so important, don't underestimate them guys. More and more value from this channel, there is no topic this guy hasn't covered. Thanks for the tips \u270c\ud83c\udffb",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d",
+        "@Dan Trebune Why would you need to do this?",
+        "Too true! One of the greatest skills a programmer can have is the ability break down and explain their code to a non-technical person!"
+      ]
+    },
+    {
+      "main_comment": "Probably Tim is the best Gen Z programmer on YouTube.",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "I am developer  since 20 years , I can say u are a special  .",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Also learning how to learn efficiently. It's something no one teaches you and you have to work on it and get good at it.",
+      "replies": [
+        "@Rub\u00e9n Guti\u00e9rrez Focusing on the most important things first. Mastering one language or i guess one more.",
+        "Any recommendations on that?"
+      ]
+    },
+    {
+      "main_comment": "In my view, \"domaing knowledge\" is to know about the market specifics of what you're working on. For example, I work in a Real Estate Fintech Startup, so the domain knowledge here is knowing about Real Estate market specifics. I actually think that, in some cases, it is better to have a Junior programmer with Domain Knowledge over a Senior programmer with no knowledge of the market the company is in",
+      "replies": [
+        "@vulpixelful Your comments are entirely off-topic. Your personal choice does not define the whole industry.",
+        "@Vs Sm Well that's how we work, and we're compensated well for that so that's all I can say \u270c\ud83c\udffe",
+        "@vulpixelful You are either an architect/dev or a domain specialist. You cannot be both, and there is no need for that even in a startup.",
+        "@Vs Sm Again, in small startups that's usually the senior devs bothering the Product Owner and architecting it themselves. In smaller orgs with less headcount, senior devs aren't just implementers, we also are the architects",
+        "@vulpixelful For a system design you need an architect, not a simple dev. In any case a domain specialist can be interviewed to get the specifics. You don't need to know everything, you need to learn how to ask right questions. This is what I do everyday as as dev, it's called translating business requirements to technical specifications.",
+        "Yes, I'm in a fintech startup too and this is true. In a bigger company, that may be \"someone else's job\" but not in a startup lol. The domain drives the system design.",
+        "That is indeed what is called domain knowledge. I work in educational software, and my coworkers with a background in education are the ones with domain knowledge, even though I have far more expertise in software.",
+        "@John Bennett Sorry, you are too wordy. Word diarrhea is not the best way of communication.",
+        "@Vs Sm apparently my message was not clear because you absolutely and totally misunderstand it. Lack of education? I graduated from CALTECH, one of the hardest colleges in the world. My job was hard because I chose one that is inherently hard. I did it because I enjoy the challenge. I got the job and\nwas given such limited direction because my boss trusted my knowledge and skill.\nI guess you have been lucky and worked for a company with a real marketing department. Most companies so called market department is just a glorified sales team. They give limited and unreasonable \"designs\". The programmers have to sort it out and come up with the real design. Unfortunately too many programmers just do the minimum to get the code to work. In the end customers are frequently left with the choice between bad and horrible.",
+        "@John Bennett Exactly. When you don't bother getting a proper education, your life in programming is very hard like yours. When you have one, it's just yet another task you've been solving for years. My attitude is education. education and education. Your attitude is neither education, nor experience, otherwise you would know that any interface is paid for by a Marketing Department and not by talented UX/UI designers.",
+        "@Vs Sm if you are a coder, then fine. If you are what I would call a programmer, you need a lot more. At my last job, my assignment was \"improve the accuracy of the handwriting recognizer\". It was my job to figure out how to do this. It involved a combination of my knowledge, asking my colleagues, research and a whole lot of experimentation. Most programmers get more direction than this, but a lot of important details are left up to them. Your attitude is why every retail interface I have ever seen was somewhere between bad and truly horrible.",
+        "@JulianoGheller Before you get a specific role you have to get a proper education which let you get specialized in any field you want. The problem is that you don't have one and that's why cannot see a bigger picture.",
+        "@Vs Sm I see it in another way. If your mindset is that you should only learn and execute things in your specific role, thats right (you can even call yourself a \"Specialist\"), but anyone who is curious enough to exceed your pre-determined attributions to contribute in as many ways possible (called a \"Generalist\"), is, in my opinion, way more valuable. Be whatever you want, but, notoriously, these individuals have a way higher chance to succeed just because they have a bigger range of skills",
+        "@Devashish Mishra Proper education, then domain is a context only.",
+        "@JulianoGheller For priorities there are  PM and BA regardless of your position. You are just doing someone's else job you are not paid for.",
+        "What's the best way of gaining domain knowledge?",
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d",
+        "@Vs Sm exactly, it's not the technical things that differ, but the understanding of the priorities and the things that really would improve the product as a whole, that's why I used the \"Junior with this knowledge > Senior without (for some cases) eu\" argument. My point is that this Junior would have way more autonomy and direction of what needs to be done than the Senior, that would know HOW, but not what.",
+        "This is just a silly bias. How an input field or SQL query differ in real estate? I\u2019ve been working in finance area for years and still have no idea what they talk about. For all your questions there is always a BA or someone from the business side.",
+        "I agree. It might be just a fintech thing. The knowledge of how the finance part works is a really important part in being able to even know where to start. It does cut both ways though into things like specific routines that do finance calculations, or audit reporting. I know in my company there's people who've done these for years and just know the entire range of possibilities in those specific areas",
+        "@JulianoGheller ok.",
+        "@Lucas Premat it could be, depends on the way uou see it, doesnt really matter",
+        "No isn't it different areas in Programming? like game development for example?"
+      ]
+    },
+    {
+      "main_comment": "I use Vim",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d",
+        "I use vim in vs code. Still getting used to it \ud83d\ude05",
+        "you dropped this king \ud83d\udc51"
+      ]
+    },
+    {
+      "main_comment": "Love the fact that you edit your own videos, that's actually amazing. And you're right, as a beginner, running into errors is actually very depressing lol",
+      "replies": [
+        "@daneelfn probably a bit narcissistic. It\u2019s best to ignore such  people as if they were empty space",
+        "@daneelfn Oh, boy \ud83d\ude02",
+        "@Vs Sm bro how negative are you, i've seen u comment like 5 different things just being annoying. Like are you ok?",
+        "@mccowan zhang An only relevant one. \ud83d\ude02",
+        "An error is a chance to learn something! \ud83d\ude01",
+        "@Vs Sm Terrible response.",
+        "Then you need to look for a simpler career."
+      ]
+    },
+    {
+      "main_comment": "Teacher Tim \ud83d\ude48",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Looking forward to more rust! \ud83d\ude01",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Title: *Coding tips no one will teach you*\nTim: *Teaches us those coding tips*\nThanks, great video",
+      "replies": [
+        "Hahah, I told you about them, not taught you them ;)"
+      ]
+    },
+    {
+      "main_comment": "You could teach us Tim \ud83e\udd7a",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Fascinating",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Thanks man!",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "First comment \ud83e\udd73\ud83e\udd73\ud83e\udd73\ud83e\udd73\ud83e\udd73\ud83e\udd73",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Thank you for the video , Tim.",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "Pog",
+      "replies": []
+    },
+    {
+      "main_comment": "Second \ud83e\udd48",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    },
+    {
+      "main_comment": "First \ud83e\udd47",
+      "replies": [
+        "\u0561\u0267\u0539\u0535\u054f\u0539\u03c1\u03c1 \u028de \u054c\u053e\u0561\u270d\ud83c\udfff\u270d\ud83c\udfff\ud83d\udd1d"
+      ]
+    }
+  ],
+  "post_description": "Welcome back to another video on my channel! In this video I am going to be sharing with you some coding skills that nobody can teach you! What I mean by that is these are going to be things that you can't learn from a book or a YouTube video. These are things that require hundreds if not thousands of hours of practice and that you have to build over a career of coding. Please enjoy the video! \n\n\ud83d\udcbb Thanks to Linode for sponsoring this video! Get a $100 60-day credit when you sign up with a new account from: https://linode.com/techwithtim\n\n\ud83d\udcbb ProgrammingExpert is the best platform to learn how to code and become a software engineer as fast as possible! Check it out here: https://programmingexpert.io/tim and use code \"tim\" for a discount!\n\n\u2b50\ufe0f Timestamps \u2b50\ufe0f\n00:00 | Overview\n01:08 | Sponsor\n02:00 | Domain Knowledge\n04:49 | Programming Habits\n07:22 | Software & Tools Efficiency\n09:57 | Debugging & Obscure Problem Solving\n12:09 | Conclusion\n\n\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\n\ud83d\udc55 Merchandise: https://teespring.com/stores/tech-with-tim-merch-shop \n\n\ud83d\udcf8 Instagram: https://www.instagram.com/tech_with_tim \n\ud83d\udcf1 Twitter: https://twitter.com/TechWithTimm \n\u2b50 Discord: https://discord.gg/twt\n\ud83d\udcdd LinkedIn: https://www.linkedin.com/in/tim-ruscica-82631b179/ \n\ud83c\udf0e Website: https://techwithtim.net \n\ud83d\udcc2 GitHub: https://github.com/techwithtim \n\ud83d\udd0a Podcast: https://anchor.fm/tech-with-tim \n\n\ud83c\udfac My YouTube Gear:  https://www.techwithtim.net/gear/\n\n\ud83d\udcb5 One-Time Donations: https://www.paypal.com/donate?hosted_button_id=CU9FV329ADNT8\n\ud83d\udcb0 Patreon: https://www.patreon.com/techwithtim\n\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\u25fc\ufe0f\n\n\u2b50\ufe0f Tags \u2b50\ufe0f\n- Tech With Tim\n- Coding Skills\n- Things People Don't Teach You\n- Good Coding Skills\n- Programming Skills\n\n\u2b50\ufe0f Hashtags \u2b50\ufe0f\n#TechWithTim #CodingSkills",
+  "post_title": "Coding Skills NO ONE Will Teach You",
+  "social_media_website": "youtube"
+}

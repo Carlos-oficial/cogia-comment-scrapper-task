@@ -7,6 +7,15 @@ import os
 google_API_key = "AIzaSyBkdWcnpyh2NhozpGVYn1xbpk6XCRYmyC4"
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
+def get_details(vid_id):
+    result = {}
+    with build("youtube", "v3", developerKey=google_API_key) as service:
+        request = service.videos().list(
+        part="snippet",
+        id=vid_id
+    )
+    result["video"] = request.execute()
+    return result
 
 def get_comments(vid_id):
     result = []

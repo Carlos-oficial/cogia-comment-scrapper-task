@@ -1,13 +1,11 @@
 
 import json
-from lib.client import get_comments,get_replies
+from lib.yt_client import get_comments,get_details
 from models.Comment import *
 
-resp = get_comments("7qH8prh4hpE")
-# resp = get_replies("UgxKK_9nII_Pd4dl5094AaABAg")
-# print(resp)
-reps = (map_comment(resp))
+post1 = Yt_Post("youtube",get_details("7qH8prh4hpE"),get_comments("7qH8prh4hpE"))
+
 with open('output.json', "w") as file:
-    file.write(json.dumps((reps),
+    file.write(json.dumps((post1.__dict__),
                sort_keys=True, indent=2))
 
