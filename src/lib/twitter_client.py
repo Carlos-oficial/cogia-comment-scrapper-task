@@ -32,7 +32,7 @@ def create_username_req_url(user_id):
 def create_conversation_req_url(converstion_id):
     tweet_fields = "tweet.fields=created_at,author_id,text"
     query = "query=conversation_id%3A"+converstion_id
-    url = "https://api.twitter.com/2/tweets/search/all?{}".format(query)
+    url = "https://api.twitter.com/2/tweets/search/recent?{}".format(query)
     return url
 
 
