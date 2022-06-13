@@ -72,3 +72,8 @@ def get_conversation(converstion_id,):
         i += 1
     return result
 
+replies = []
+for tweet in tweepy.Cursor(api.search_tweets,q='to:'+"NASAKennedy", result_type='recent', timeout=999999).items(1000):
+    if hasattr(tweet, 'in_reply_to_status_id_str'):
+        if (tweet.in_reply_to_status_id_str==tweet_id):
+            replies.append(tweet)
