@@ -29,10 +29,12 @@ def create_username_req_url(user_id):
     return url
 
 
-def create_conversation_req_url(converstion_id):
-    tweet_fields = "tweet.fields=created_at,author_id,text"
+def create_conversation_req_url(converstion_id,page_token = None):
     query = "query=conversation_id%3A"+converstion_id
+    if page_token is not None:
+        query += "&pagination_token=" + page_token
     url = "https://api.twitter.com/2/tweets/search/recent?{}".format(query)
+
     return url
 
 
@@ -61,21 +63,12 @@ def get_username(user_id):
     return connect_to_endpoint_bearer(url)["data"][0]["name"]
 
 
-def get_conversation(converstion_id):
+def get_conversation(converstion_id,):
     url = create_conversation_req_url(converstion_id)
-    return connect_to_endpoint_bearer(url)
+    result = [connect_to_endpoint_bearer(url)]
+    i = 0
+    while "next_token" in result[i]["meta"].keys():
+        result.append(connect_to_endpoint_bearer(create_conversation_req_url(converstion_id,result[i]["meta"]["next_token"])))
+        i += 1
+    return result
 
-
-# print(get_tweet("1535970795448586242"))
-print(get_conversation("1535970795448586242"))
-
-{"client_id": "24555515",
- "detail": "When authenticating requests to the Twitter API v2 endpoints,\
-  you must use keys and tokens from a Twitter developer App that is attached to a Project.\
-  You can create a project via the developer portal.",
-
-    "registration_url": "https://developer.twitter.com/en/docs/projects/overview",
-     "title": "Client Forbidden",
-     "required_enrollment": "Standard Basic",
-     "reason": "client-not-enrolled",
-     "type": "https://api.twitter.com/2/problems/client-forbidden"}
