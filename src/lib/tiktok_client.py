@@ -1,5 +1,6 @@
 import requests
 import json
+from bs4    import BeautifulSoup
 
 def retrieve_id_form_link(link):
     return link.split("video/")[1]
@@ -28,7 +29,7 @@ def get_comments(post_id, comments=100):
     reqUrl = f"https://www.tiktok.com/api/comment/list/?aweme_id={post_id}&count={comments}&cursor={cursor}"
     response = [requests.request("GET", reqUrl, headers=headersList).json()]
 
-    while(cursor < response[i]["total"]):
+    while("total" in response[i].keys() and cursor < response[i]["total"]):
         comments = min(comments, response[i]["total"]-cursor)
         cursor += comments
         total = response[i]["total"]

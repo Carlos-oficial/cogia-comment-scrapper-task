@@ -19,7 +19,7 @@ def map_replies(comment_object):
         if "comments" in page.keys() and page["comments"] is not None: 
             for reply in page["comments"]:
                 result.append(reply["text"])
-                print(reply["text"])
+                # print(reply["text"])
     return result
 
 
