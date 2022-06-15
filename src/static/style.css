@@ -1,0 +1,23 @@
+button {
+  background: rgb(100, 100, 100);
+  margin: 5px;
+}
+
+.container {
+  background: rgb(220, 220, 220);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+.text_block {
+  padding: 5px;
+}
+.center {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
