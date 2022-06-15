@@ -14,13 +14,14 @@ auth.set_access_token(twitter_access_token, twitter_access_token_secret)
 
 api = tweepy.API(auth)
 
+def retrieve_id_form_link(link):
+    return link.split("status/")[1]
 
 def create_tweet_req_url(post_id):
     tweet_fields = "tweet.fields=created_at,author_id,text,conversation_id"
     ids = "ids="+post_id
     url = "https://api.twitter.com/2/tweets?{}&{}".format(ids, tweet_fields)
     return url
-
 
 def create_username_req_url(user_id):
     tweet_fields = "tweet.fields=created_at,author_id,text"
@@ -72,8 +73,8 @@ def get_conversation(converstion_id,):
         i += 1
     return result
 
-replies = []
-for tweet in tweepy.Cursor(api.search_tweets,q='to:'+"NASAKennedy", result_type='recent', timeout=999999).items(1000):
-    if hasattr(tweet, 'in_reply_to_status_id_str'):
-        if (tweet.in_reply_to_status_id_str==tweet_id):
-            replies.append(tweet)
+# replies = []
+# for tweet in tweepy.Cursor(api.search_tweets,q='to:'+"NASAKennedy", result_type='recent', timeout=999999).items(1000):
+#     if hasattr(tweet, 'in_reply_to_status_id_str'):
+#         if (tweet.in_reply_to_status_id_str==tweet_id):
+#             replies.append(tweet)

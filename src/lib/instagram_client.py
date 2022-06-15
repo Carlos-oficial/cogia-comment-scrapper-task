@@ -8,11 +8,11 @@ from Cryptodome.Cipher import AES
 from nacl.public import PublicKey, SealedBox
 import requests
 import json
-
+import os
+from loguru import logger
 "https://instagram.com/data/shared_data/"
 
 endpoint = "https://instagram.com/accounts/login/ajax/"
-
 
 
 # headers = {
@@ -22,6 +22,21 @@ endpoint = "https://instagram.com/accounts/login/ajax/"
 #         "Cookie":f"csrftoken={csrf};",
 #         "x-csrftoken": csrf
 #     }
+
+
+def is_file_empty(file_path):
+    """ Check if file is empty by confirming if its size is 0 bytes"""
+    # Check if file exist and it is empty
+    return os.path.exists(file_path) and os.stat(file_path).st_size == 0
+
+
+def shortcode_to_id(shortcode):
+    code = ('A' * (12-len(shortcode)))+shortcode
+    return int.from_bytes(base64.b64decode(code.encode(), b'-_'), 'big')
+
+
+def retrieve_id_form_link(link):
+    return shortcode_to_id(link.split("/p/")[1])
 
 
 def get_shared_data():
@@ -67,6 +82,11 @@ def encrypt_password(key_id: str | int = None, public_key: str = None, version: 
 
 
 def login(username, password):
+    session = get_login_creds(username)
+    if session:
+        print("Session found")
+        return session
+
     enc, csrf = get_shared_data()
     account = {
         'username': username,
@@ -79,31 +99,50 @@ def login(username, password):
         "Cookie": f"csrftoken={csrf};",
         "x-csrftoken": csrf
     }
-    print(headers)
 
     response = requests.post(endpoint, data=account, headers=headers)
     body = response.json()
+
     if "authenticated" in body.keys() and body["authenticated"]:
         print("authenticated")
+
+        add_session_to_file(username, response.cookies)
+
     return response.cookies
 
-# https://i.instagram.com/api/v1/media/{media_id}/comments/?can_support_threading=true&permalink_enabled=false
-# ^^ request para os cometarios ^^
 
-# headers = {
-#         "User-Agent": "Instagram 10.3.2 (iPhone7,2; iPhone OS 9_3_3; en_US; en-US; scale=2.00; 750x1334) AppleWebKit/420+",
-#         "Referer": "https://instagram.com/",
-#         "Origin" : "https://instagram.com/",
-#         "Cookie":f"csrftoken={csrf};sessionid={sesion_id_token}",
-#         "x-csrftoken": csrf
-#     }
+def add_session_to_file(username, cookies, path='./accounts.json'):
 
-# id_to_shortcode = lambda instagram_id: base64.b64encode(instagram_id.to_bytes(9, 'big'), b'-_').decode().replace('A', ' ').lstrip().replace(' ', 'A')
+    accounts = {}
+    with open(path, "w") as accounts_file:
+        if not is_file_empty(path):
+            try:
+                accounts = json.load(accounts_file)
+            except json.JSONDecodeError:
+                pass
+
+        accounts[username] = {
+            "sessionid": cookies["sessionid"],
+            "csrftoken": cookies["csrftoken"]
+        }
+
+        print("Session Added")
+        accounts_file.write(json.dumps(accounts))
 
 
-def shortcode_to_id(shortcode):
-    code = ('A' * (12-len(shortcode)))+shortcode
-    return int.from_bytes(base64.b64decode(code.encode(), b'-_'), 'big')
+def get_login_creds(username, path='./accounts.json'):
+    accounts = {}
+    with open(path, "w") as accounts_file:
+        if not is_file_empty(path):
+            try:
+                accounts = json.load(accounts_file)
+                accounts_file.write(json.dumps(accounts))
+            except json.JSONDecodeError:
+                pass
+            if username in accounts.keys():
+                return accounts[username]
+            else:
+                return None
 
 
 def get_comments(session_id, csrf, slug):
@@ -118,25 +157,25 @@ def get_comments(session_id, csrf, slug):
     url = f"https://i.instagram.com/api/v1/media/{media_id}/comments/?can_support_threading=true&permalink_enabled=false"
     result = [requests.get(url, headers=headers).json()]
     i = 0
-    while "next_min_id" in result[i].keys():
-        next_min_id = result[i]["next_min_id"]
-        result.append(requests.get(url+f"&min_id={next_min_id}", headers=headers).json())
-        i += 1
-        sleep(5000)
+    # while "next_min_id" in result[i].keys():
+    #     next_min_id = result[i]["next_min_id"]
+    #     result.append(requests.get(url+f"&min_id={next_min_id}", headers=headers).json())
+    #     i += 1
     return result
 
-#paginacao
-#https://i.instagram.com/api/v1/media/2433508281915625989/comments/?can_support_threading=true&min_id={next_min_id}
 
 def main():
     resp_cookies = login("streammanager96", "Portos06241!")
-    res = get_comments(resp_cookies["sessionid"],
-          resp_cookies["csrftoken"], "CHFjuOdjVIF")
-    print(res)
-    with open('output.json', "w") as file:
-        file.write(res)
+    logger.error("session cookies: {}", resp_cookies)
+#     res = get_comments(resp_cookies["sessionid"],
+#           resp_cookies["csrftoken"], "CHFjuOdjVIF")
+#     print(res)
+#     with open('output.json', "w") as file:
+#         file.write(json.dumps(res,indent=2))
+# #
 
 
 if __name__ == "__main__":
     main()
 
+# <RequestsCookieJar[<Cookie csrftoken=98ATflSRmIDnOjW2uFVTeUtejmmvfEiD for instagram.com/>, <Cookie ds_user_id=8572570818 for instagram.com/>, <Cookie mid=YqjxYQAAAAFqJFHxJcdt9wv9ynKS for instagram.com/>, <Cookie rur=ASH for instagram.com/>, <Cookie sessionid=8572570818%3A57B6JYaLGT9lVv%3A25 for instagram.com/>]>

@@ -1,3 +1,4 @@
+
 def map_post(comments_object, description,get_replies):
     result = {"comments": []}
     result["text"] = description

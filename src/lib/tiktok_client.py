@@ -1,10 +1,8 @@
 import requests
 import json
-from bs4 import BeautifulSoup
 
-referer = "https://www.tiktok.com/"
-url = "https://www.tiktok.com/api/comment/list/?aweme_id={video_id}&count={n_comments}"
-#aweme_id == item_id
+def retrieve_id_form_link(link):
+    return link.split("video/")[1]
 
 
 def extract_desc(link):
@@ -34,7 +32,6 @@ def get_comments(post_id, comments=100):
         comments = min(comments, response[i]["total"]-cursor)
         cursor += comments
         total = response[i]["total"]
-        print(f"cursor:{cursor},total:{total}")
         reqUrl = f"https://www.tiktok.com/api/comment/list/?aweme_id={post_id}&count={comments}&cursor={cursor}"
         response.append(requests.request(
             "GET", reqUrl, headers=headersList).json())
@@ -54,10 +51,8 @@ def get_replies(comment_id, replies=100):
     try:
         resp = resp.json()
     except requests.exceptions.JSONDecodeError:
-        print("EXEPTIOOOOOOOOOOOOON")
         return []
 
-    print(resp)
     response = [resp]
 
     while(response[i]["has_more"]):
@@ -69,18 +64,13 @@ def get_replies(comment_id, replies=100):
 
         resp = requests.request("GET", reqUrl, headers=headersList).json()
 
-        print(f"""
-        status_code:{resp["status_code"]}
-        """)
         response.append(resp)
         i += 1
     return response
 
 
 def main():
-    res = get_replies("7075812417736901382")
-    with open('replies.json', "w") as file:
-        file.write(json.dumps(res, indent=2))
+    pass
 
 
 if __name__ == "__main__":
