@@ -76,7 +76,7 @@ def get_tweet(link, save_if_not_found=False):
     return obj
 
 
-def crawl_for_post(link, save_if_not_found=False):
+def crawl_for_post(link, save_if_not_found = False):
     if "youtube" in link:
         return get_yt_video(link, save_if_not_found)
     elif "twitter" in link:

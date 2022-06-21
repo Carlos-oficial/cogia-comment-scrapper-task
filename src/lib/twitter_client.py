@@ -14,24 +14,27 @@ auth.set_access_token(twitter_access_token, twitter_access_token_secret)
 
 api = tweepy.API(auth)
 
+
 def retrieve_id_form_link(link):
     return link.split("status/")[1]
 
+
 def create_tweet_req_url(post_id):
     tweet_fields = "tweet.fields=created_at,author_id,text,conversation_id"
-    ids = "ids="+post_id
+    ids = "ids=" + post_id
     url = "https://api.twitter.com/2/tweets?{}&{}".format(ids, tweet_fields)
     return url
 
+
 def create_username_req_url(user_id):
     tweet_fields = "tweet.fields=created_at,author_id,text"
-    ids = "ids="+user_id
+    ids = "ids=" + user_id
     url = "https://api.twitter.com/2/users?{}".format(ids)
     return url
 
 
-def create_conversation_req_url(converstion_id,page_token = None):
-    query = "query=conversation_id%3A"+converstion_id
+def create_conversation_req_url(converstion_id, page_token=None):
+    query = "query=conversation_id%3A" + converstion_id
     if page_token is not None:
         query += "&pagination_token=" + page_token
     url = "https://api.twitter.com/2/tweets/search/recent?{}".format(query)
@@ -44,6 +47,7 @@ def connect_to_endpoint_bearer(url):
         r.headers["Authorization"] = f"Bearer {twitter_bearer_token}"
         r.headers["User-Agent"] = "v2TweetLookupPython"
         return r
+
     response = requests.request("GET", url, auth=bearer_oauth)
     if response.status_code != 200:
         raise Exception(
@@ -64,14 +68,23 @@ def get_username(user_id):
     return connect_to_endpoint_bearer(url)["data"][0]["name"]
 
 
-def get_conversation(converstion_id,):
+def get_conversation(
+    converstion_id,
+):
     url = create_conversation_req_url(converstion_id)
     result = [connect_to_endpoint_bearer(url)]
     i = 0
     while "next_token" in result[i]["meta"].keys():
-        result.append(connect_to_endpoint_bearer(create_conversation_req_url(converstion_id,result[i]["meta"]["next_token"])))
+        result.append(
+            connect_to_endpoint_bearer(
+                create_conversation_req_url(
+                    converstion_id, result[i]["meta"]["next_token"]
+                )
+            )
+        )
         i += 1
     return result
+
 
 # replies = []
 # for tweet in tweepy.Cursor(api.search_tweets,q='to:'+"NASAKennedy", result_type='recent', timeout=999999).items(1000):
